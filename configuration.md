@@ -41,13 +41,13 @@ Configure which AI model scores and summarizes your content.
 {
   "ai": {
     "provider": "minimax",
-    "model": "MiniMax-M2.5",
+    "model": "MiniMax-M2.7",
     "api_key_env": "MINIMAX_API_KEY"
   }
 }
 ```
 
-Available models: `MiniMax-M2.5`, `MiniMax-M2.5-highspeed`
+Available models: `MiniMax-M2.7`, `MiniMax-M2.7-highspeed`, `MiniMax-M2.5`, `MiniMax-M2.5-highspeed`
 
 **Aliyun DashScope** (OpenAI-compatible):
 
