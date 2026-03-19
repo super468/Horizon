@@ -19,6 +19,26 @@
         "enabled": true
       },
       {
+        "type": "user_events",
+        "username": "simonw",
+        "enabled": true
+      },
+      {
+        "type": "user_events",
+        "username": "ggerganov",
+        "enabled": true
+      },
+      {
+        "type": "user_events",
+        "username": "natolambert",
+        "enabled": true
+      },
+      {
+        "type": "user_events",
+        "username": "rasbt",
+        "enabled": true
+      },
+      {
         "type": "repo_releases",
         "owner": "vllm-project",
         "repo": "vllm",
@@ -35,19 +55,433 @@
         "owner": "triton-lang",
         "repo": "triton",
         "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "pytorch",
+        "repo": "pytorch",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "huggingface",
+        "repo": "transformers",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "huggingface",
+        "repo": "diffusers",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "huggingface",
+        "repo": "text-generation-inference",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "ollama",
+        "repo": "ollama",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "ggml-org",
+        "repo": "llama.cpp",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "openai",
+        "repo": "openai-python",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "anthropics",
+        "repo": "anthropic-sdk-python",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "anthropics",
+        "repo": "claude-agent-sdk-python",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "googleapis",
+        "repo": "python-genai",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "langchain-ai",
+        "repo": "langchain",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "run-llama",
+        "repo": "llama_index",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "microsoft",
+        "repo": "autogen",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "microsoft",
+        "repo": "semantic-kernel",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "BerriAI",
+        "repo": "litellm",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "gradio-app",
+        "repo": "gradio",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "open-webui",
+        "repo": "open-webui",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "langgenius",
+        "repo": "dify",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "crewAIInc",
+        "repo": "crewAI",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "pydantic",
+        "repo": "pydantic-ai",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "OpenHands",
+        "repo": "OpenHands",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "deepspeedai",
+        "repo": "DeepSpeed",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "unslothai",
+        "repo": "unsloth",
+        "enabled": true
       }
     ],
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 10,
-      "min_score": 200
+      "fetch_top_stories": 30,
+      "min_score": 80
     },
     "rss": [
+      {
+        "name": "arXiv - cs.AI",
+        "url": "https://arxiv.org/rss/cs.AI",
+        "enabled": false,
+        "category": "research-papers"
+      },
+      {
+        "name": "arXiv - cs.LG",
+        "url": "https://arxiv.org/rss/cs.LG",
+        "enabled": false,
+        "category": "research-papers"
+      },
+      {
+        "name": "arXiv - cs.CL",
+        "url": "https://arxiv.org/rss/cs.CL",
+        "enabled": false,
+        "category": "research-papers"
+      },
+      {
+        "name": "arXiv - cs.CV",
+        "url": "https://arxiv.org/rss/cs.CV",
+        "enabled": false,
+        "category": "research-papers"
+      },
+      {
+        "name": "arXiv - stat.ML",
+        "url": "https://arxiv.org/rss/stat.ML",
+        "enabled": false,
+        "category": "research-papers"
+      },
+      {
+        "name": "arXiv - cs.RO",
+        "url": "https://arxiv.org/rss/cs.RO",
+        "enabled": false,
+        "category": "research-papers"
+      },
+      {
+        "name": "Hugging Face Daily Papers (community)",
+        "url": "https://papers.takara.ai/api/feed",
+        "enabled": true,
+        "category": "research-papers"
+      },
+      {
+        "name": "Google Research Blog",
+        "url": "https://blog.research.google/atom.xml",
+        "enabled": true,
+        "category": "official-research"
+      },
+      {
+        "name": "Microsoft Research",
+        "url": "https://www.microsoft.com/en-us/research/feed/",
+        "enabled": true,
+        "category": "official-research"
+      },
+      {
+        "name": "MIT News - AI",
+        "url": "https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml",
+        "enabled": true,
+        "category": "official-research"
+      },
+      {
+        "name": "Stanford AI Lab (SAIL) Blog",
+        "url": "https://ai.stanford.edu/blog/feed.xml",
+        "enabled": true,
+        "category": "official-research"
+      },
+      {
+        "name": "BAIR Blog",
+        "url": "https://bair.berkeley.edu/blog/feed.xml",
+        "enabled": true,
+        "category": "official-research"
+      },
+      {
+        "name": "OpenAI News",
+        "url": "https://openai.com/news/rss.xml",
+        "enabled": true,
+        "category": "official-product-company"
+      },
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/feed.xml",
+        "enabled": true,
+        "category": "official-product-company"
+      },
+      {
+        "name": "Google Blog",
+        "url": "https://blog.google/feed/",
+        "enabled": true,
+        "category": "official-product-company"
+      },
+      {
+        "name": "Microsoft AI Blog",
+        "url": "https://blogs.microsoft.com/ai/feed/",
+        "enabled": true,
+        "category": "official-product-company"
+      },
+      {
+        "name": "AWS Machine Learning Blog",
+        "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "enabled": true,
+        "category": "official-product-company"
+      },
+      {
+        "name": "NVIDIA Blog",
+        "url": "https://feeds.feedburner.com/nvidiablog",
+        "enabled": true,
+        "category": "official-product-company"
+      },
+      {
+        "name": "NVIDIA Developer Blog",
+        "url": "https://developer.nvidia.com/blog/feed",
+        "enabled": true,
+        "category": "official-product-company"
+      },
+      {
+        "name": "Stability AI News",
+        "url": "https://stability.ai/news?format=rss",
+        "enabled": true,
+        "category": "official-product-company"
+      },
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "enabled": true,
+        "category": "tech-media"
+      },
+      {
+        "name": "VentureBeat AI",
+        "url": "https://venturebeat.com/category/ai/feed/",
+        "enabled": true,
+        "category": "tech-media"
+      },
+      {
+        "name": "The Verge AI",
+        "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+        "enabled": true,
+        "category": "tech-media"
+      },
+      {
+        "name": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/feed/",
+        "enabled": true,
+        "category": "tech-media"
+      },
+      {
+        "name": "MarkTechPost",
+        "url": "https://www.marktechpost.com/feed/",
+        "enabled": true,
+        "category": "tech-media"
+      },
+      {
+        "name": "Artificial Intelligence News",
+        "url": "https://www.artificialintelligence-news.com/feed/",
+        "enabled": true,
+        "category": "tech-media"
+      },
+      {
+        "name": "TechXplore - Machine Learning & AI",
+        "url": "https://techxplore.com/rss-feed/machine-learning-ai-news/",
+        "enabled": true,
+        "category": "tech-media"
+      },
+      {
+        "name": "ScienceDaily - Artificial Intelligence",
+        "url": "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml",
+        "enabled": true,
+        "category": "tech-media"
+      },
+      {
+        "name": "WIRED AI",
+        "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+        "enabled": true,
+        "category": "tech-media"
+      },
+      {
+        "name": "Ars Technica AI",
+        "url": "http://feeds.arstechnica.com/arstechnica/artificial-intelligence",
+        "enabled": true,
+        "category": "tech-media"
+      },
       {
         "name": "Simon Willison",
         "url": "https://simonwillison.net/atom/everything/",
         "enabled": true,
-        "category": "ai-tools"
+        "category": "community-kol"
+      },
+      {
+        "name": "Import AI",
+        "url": "https://jack-clark.net/feed/",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "Latent Space",
+        "url": "https://www.latent.space/feed",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "Interconnects",
+        "url": "https://www.interconnects.ai/feed",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "The Batch",
+        "url": "https://www.deeplearning.ai/the-batch/feed/",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "AI Weekly",
+        "url": "https://aiweekly.co/issues.rss",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "Last Week in AI",
+        "url": "https://lastweekin.ai/feed",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "AINews (Buttondown)",
+        "url": "https://buttondown.com/ainews/rss",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "Machine Learning Mastery",
+        "url": "https://machinelearningmastery.com/feed/",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "Jay Alammar",
+        "url": "https://jalammar.github.io/feed.xml",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "Chip Huyen",
+        "url": "https://huyenchip.com/feed.xml",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "Lilian Weng",
+        "url": "https://lilianweng.github.io/index.xml",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "Sebastian Raschka",
+        "url": "https://sebastianraschka.com/rss_feed.xml",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "The Gradient",
+        "url": "https://thegradient.pub/rss/",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "ML in Production",
+        "url": "https://mlinproduction.com/feed",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "Weights & Biases - Fully Connected",
+        "url": "https://wandb.ai/fully-connected/rss.xml",
+        "enabled": true,
+        "category": "community-kol"
+      },
+      {
+        "name": "Product Hunt",
+        "url": "https://www.producthunt.com/feed",
+        "enabled": true,
+        "category": "product-launches"
       },
       {
         "name": "GitHub Trending - Daily",
@@ -56,10 +490,64 @@
         "category": "github-trending"
       },
       {
-        "name": "LWN.net",
-        "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
+        "name": "Hacker News - Show HN",
+        "url": "https://hnrss.org/show",
         "enabled": true,
-        "category": "linux-kernel"
+        "category": "community-launches"
+      },
+      {
+        "name": "Hacker News - AI / LLM / Agent",
+        "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+agent",
+        "enabled": true,
+        "category": "community-launches"
+      },
+      {
+        "name": "Hacker News - OpenAI / Anthropic / Gemini / DeepSeek",
+        "url": "https://hnrss.org/newest?q=OpenAI+OR+Anthropic+OR+Gemini+OR+DeepSeek",
+        "enabled": true,
+        "category": "community-launches"
+      },
+      {
+        "name": "Lobsters - AI",
+        "url": "https://lobste.rs/t/ai.rss",
+        "enabled": true,
+        "category": "community-launches"
+      },
+      {
+        "name": "机器之心",
+        "url": "https://www.jiqizhixin.com/rss",
+        "enabled": true,
+        "category": "community-cn"
+      },
+      {
+        "name": "InfoQ 中文站",
+        "url": "https://www.infoq.cn/feed",
+        "enabled": true,
+        "category": "community-cn"
+      },
+      {
+        "name": "X - Andrej Karpathy (RSSHub, self-host recommended)",
+        "url": "https://rsshub.app/twitter/user/karpathy",
+        "enabled": false,
+        "category": "social-x-optional"
+      },
+      {
+        "name": "X - Simon Willison (RSSHub, self-host recommended)",
+        "url": "https://rsshub.app/twitter/user/simonw",
+        "enabled": false,
+        "category": "social-x-optional"
+      },
+      {
+        "name": "X - OpenAI (RSSHub, self-host recommended)",
+        "url": "https://rsshub.app/twitter/user/OpenAI",
+        "enabled": false,
+        "category": "social-x-optional"
+      },
+      {
+        "name": "X - Nathan Lambert (RSSHub, self-host recommended)",
+        "url": "https://rsshub.app/twitter/user/natolambert",
+        "enabled": false,
+        "category": "social-x-optional"
       }
     ],
     "reddit": {
@@ -70,16 +558,56 @@
           "enabled": true,
           "sort": "hot",
           "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
+          "fetch_limit": 20,
+          "min_score": 40
         },
         {
           "subreddit": "LocalLLaMA",
           "enabled": true,
           "sort": "hot",
           "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 60
+          "fetch_limit": 20,
+          "min_score": 40
+        },
+        {
+          "subreddit": "singularity",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 20,
+          "min_score": 80
+        },
+        {
+          "subreddit": "artificial",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 20,
+          "min_score": 30
+        },
+        {
+          "subreddit": "OpenAI",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 20,
+          "min_score": 30
+        },
+        {
+          "subreddit": "ChatGPT",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 20,
+          "min_score": 50
+        },
+        {
+          "subreddit": "StableDiffusion",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 20,
+          "min_score": 30
         }
       ],
       "users": [],
@@ -91,7 +619,7 @@
         {
           "channel": "zaihuapd",
           "enabled": true,
-          "fetch_limit": 20
+          "fetch_limit": 30
         }
       ]
     }
