@@ -226,6 +226,8 @@ uv run horizon-mcp
 - [x] **MCP Server 集成**
 - [x] GitHub Pages 部署
 - [x] Web UI 仪表板
+- [ ] **智能信息源配置向导** — 通过对话了解用户兴趣（如"我关注具身智能"），自动推荐并配置信息源
+- [ ] **Web 界面优化** — 改善日报汇总和新闻详情的展示体验
 - [ ] Slack / Webhook 通知
 - [ ] 更多信息源（Twitter/X、Discord 等）
 - [ ] 按信息源自定义打分 Prompt

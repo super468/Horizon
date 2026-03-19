@@ -215,6 +215,8 @@ See [`src/mcp/README.md`](src/mcp/README.md) for the full tool reference and [`s
 - [x] **Docker deployment support**
 - [x] **MCP server integration**
 - [x] Web UI dashboard
+- [ ] **Smart source setup wizard** — conversational tool that recommends and configures sources based on user interests (e.g. "I follow embodied AI")
+- [ ] **Improved Web UI** — better digest and article detail experience
 - [ ] Slack / Webhook notification
 - [ ] More source types (Twitter/X, Discord, etc.)
 - [ ] Custom scoring prompts per source
