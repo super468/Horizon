@@ -14,7 +14,7 @@ from src.models import AIConfig, AIProvider
 def _make_config(**overrides) -> AIConfig:
     defaults = {
         "provider": AIProvider.MINIMAX,
-        "model": "MiniMax-M2.5",
+        "model": "MiniMax-M2.7",
         "api_key_env": "MINIMAX_API_KEY",
         "temperature": 0.3,
         "max_tokens": 4096,
@@ -27,7 +27,7 @@ class TestMiniMaxClientInit:
     def test_creates_instance_with_valid_config(self, monkeypatch):
         monkeypatch.setenv("MINIMAX_API_KEY", "test-key")
         client = MiniMaxClient(_make_config())
-        assert client.model == "MiniMax-M2.5"
+        assert client.model == "MiniMax-M2.7"
         assert client.max_tokens == 4096
 
     def test_raises_when_api_key_missing(self, monkeypatch):
@@ -55,6 +55,8 @@ class TestMiniMaxClientComplete:
         mock_response = MagicMock()
         mock_response.choices = [MagicMock()]
         mock_response.choices[0].message.content = '{"score": 8}'
+        mock_response.usage.prompt_tokens = 10
+        mock_response.usage.completion_tokens = 5
 
         with patch.object(
             client.client.chat.completions, "create", new_callable=AsyncMock
@@ -64,7 +66,7 @@ class TestMiniMaxClientComplete:
 
         assert result == '{"score": 8}'
         call_kwargs = mock_create.call_args[1]
-        assert call_kwargs["model"] == "MiniMax-M2.5"
+        assert call_kwargs["model"] == "MiniMax-M2.7"
         # response_format should NOT be present (MiniMax doesn't support it)
         assert "response_format" not in call_kwargs
 
@@ -76,6 +78,8 @@ class TestMiniMaxClientComplete:
         mock_response = MagicMock()
         mock_response.choices = [MagicMock()]
         mock_response.choices[0].message.content = "ok"
+        mock_response.usage.prompt_tokens = 10
+        mock_response.usage.completion_tokens = 5
 
         with patch.object(
             client.client.chat.completions, "create", new_callable=AsyncMock
